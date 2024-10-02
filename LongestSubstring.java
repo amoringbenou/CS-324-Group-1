@@ -43,7 +43,7 @@ public class LongestSubstring {
     // Main method to test the solutions
     public static void main(String[] args) {
 
-        String s = "abcdefghijklmnopqrstuvwxyzADGFVEOFHFHHNMDLLFNVN" + "abc".repeat(10000);
+        String s = "abcdefghijklabcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&()_+{}[]:;'<>,./?mnopqrstuvwxyz" + "abc".repeat(10000);
 
         // ######### benchmarking solution 1 ###########
         System.out.println("Benchmarking solution 1");
