@@ -1,4 +1,4 @@
-# LeetCode Interview Questions - Group #1
+# LeetCode Interview Questions - Group 1
 
 This file contains the explanation of solutions to LeetCode problems. The solutions are implemented in Java.
 
@@ -40,7 +40,6 @@ Solutions:
      Time Complexity:
         Outer loop (for loop with the right pointer): This loop iterates n times, where n is the length of the string.
         indexOf method: For each character at position right, the indexOf method is called. In the worst case, it scans the substring from left to right, which can take O(n) time in each call.
-        This results in a nested loop structure, leading to a quadratic time complexity.
         Thus, the overall time complexity becomes O(n^2) in the worst case because each call to indexOf can take up to n steps, and we make such calls n times.
 
      Space Complexity:
