@@ -1,4 +1,4 @@
-# LeetCode Interview Questions - Group 1
+# LeetCode Interview Questions - Group #1
 
 This file contains the explanation of solutions to LeetCode problems. The solutions are implemented in Java.
 
@@ -20,11 +20,13 @@ Solutions:
 
 
      Time Complexity:
+
         Outer loop (for loop with the right pointer): This loop iterates over every character of the string s, so it runs n times, where n is the length of the string.
         Hash map operations (containsKey, get, put): All these operations (inserting and checking values in a HashMap) are O(1) on average.
         Thus, the overall time complexity is O(n), where n is the length of the input string.
 
      Space Complexity:
+
         The map stores each unique character and its index. In the worst case, all characters are unique, so the space required by the map is proportional to the number of characters in the string, i.e., O(n).
         Other variables (left, right, maxLength) use constant space, i.e., O(1).
         So, the overall space complexity is O(n).
@@ -38,11 +40,14 @@ Solutions:
 
 
      Time Complexity:
+
         Outer loop (for loop with the right pointer): This loop iterates n times, where n is the length of the string.
         indexOf method: For each character at position right, the indexOf method is called. In the worst case, it scans the substring from left to right, which can take O(n) time in each call.
+        This results in a nested loop structure, leading to a quadratic time complexity.
         Thus, the overall time complexity becomes O(n^2) in the worst case because each call to indexOf can take up to n steps, and we make such calls n times.
 
      Space Complexity:
+
         This method only uses a few variables (left, right, maxLength), all of which use constant space, i.e., O(1).
         So, the overall space complexity is O(1).
 

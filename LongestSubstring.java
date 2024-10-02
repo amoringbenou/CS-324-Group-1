@@ -42,15 +42,17 @@ public class LongestSubstring {
 
     // Main method to test the solutions
     public static void main(String[] args) {
-        String s = "qawetrfhfnfgkgccbcbcfcabrtydsacaddkffmbcbbahsdhxahasjshsasaaaaaaSDHDSDDHSDSSSDDDSJSJSDSAISSJSJ";
+
+        String s = "abcdefgLMNOPQRShijklmnopqLMNOPQRSrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ012LMNOPQRS()_+{}[]:;'<>,./?";
+
         // ######### benchmarking solution 1 ###########
         System.out.println("Benchmarking solution 1");
         System.out.println();
         long startTime = System.nanoTime(); // Start timing
-        long result = solution1(s.toLowerCase());
+        long result = solution1(s);
         long endTime = System.nanoTime();// End timing
 
-        System.out.println(" Solution 1- Length of longest substring of : " + s.toLowerCase() + " is: " + result);
+        System.out.println(" Solution 1- Length of longest substring of : " + s + " is: " + result);
         System.out.println("Execution time: " + (endTime - startTime) + " nanoseconds");
         System.out.println();
 
@@ -58,10 +60,10 @@ public class LongestSubstring {
         System.out.println("Benchmarking solution 2");
         System.out.println();
         long startTime2 = System.nanoTime(); // Start timing
-        long result2 = solution2(s.toLowerCase());
+        long result2 = solution2(s);
         long endTime2 = System.nanoTime();// End timing
 
-        System.out.println(" Solution 2- Length of longest substring of : " + s.toLowerCase() + " is: " + result2);
+        System.out.println(" Solution 2- Length of longest substring of : " + s + " is: " + result2);
         System.out.println("Execution time: " + (endTime2 - startTime2) + " nanoseconds");
         System.out.println();
     }

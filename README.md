@@ -61,8 +61,8 @@ We have implemented both solutions and compared their time and space complexitie
 | Solution 1 | O(n) | O(n) |
 | Solution 2 | O(n^2) | O(1) |
 
-- The Solution 1 is more efficient in terms of time complexity because it performs all operations in linear time, while the second method can take quadratic time in the worst case.
-- The Solution 2 uses less memory since it only uses a few constant-space variables, whereas the first method requires extra space proportional to the size of the string due to the HashMap.
+- The Solution 1 is more efficient in terms of time complexity because it performs all operations in linear time, while the Solution 2 can take quadratic time in the worst case.
+- The Solution 2 uses less memory since it only uses a few constant-space variables, whereas the Solution 1 requires extra space proportional to the size of the string due to the HashMap.
 
 As we can see, Solution 1 is more efficient than Solution 2 in terms of time complexity, but Solution 2 is more efficient in terms of space complexity.
 
